@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Amiri", sans-serif;
+    background: linear-gradient(135deg, #a7c4e0, #d4f1f4);
+    color: #000; /* Black text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body[dir="rtl"] {
+    text-align: right;
+}
+
+button {
+    text-align: right;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #0d636696;
+    font-size: 29px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.4);
+    color: #474747;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex
+;
+        padding: 10px 14px;
+        margin: 20px auto;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Visibility */
+.section {
+    display: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    animation: fadeIn 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Question Section */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option {
+    text-align: left;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Results Section */
+#resultsPage p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000; /* Black text */
+}
+
+#resultsPage button {
+    margin-top: 20px;
+}
+
+
+.option.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.option.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.option.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 5px;
+    color: #0d636696;
+}
+.box-1 {
+    display: flex;
+    
+}
+
+button {
+    padding: 12px 41px;
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 23px;
+    }
+
+    .option {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .section {
+        padding: 30px 10px;
+    }
+}
+#startButton {
+    display: none;
+}
+/* General RTL support for body */
+body[dir="rtl"] {
+    text-align: right;
+}
+
+/* Question page container adjustments */
+#questionPage {
+    text-align: right; /* Align text to the right */
+}
+
+/* Align the options to the right for RTL */
+#options {
+    text-align: right;
+}
+
+/* Adjust button alignment to be RTL */
+button {
+    text-align: right;
+    direction: rtl; /* Ensures button text flows right to left */
+}
+
+/* Adjust the question text and answers */
+#questionText {
+    text-align: right;
+        padding: 10px 23px;
+
+}
+
+.option {
+    text-align: right; /* Align options text to the right */
+    
+        text-align: right;
+        padding: 13px 28px;
+        font-size: 19px;
+    
+}
+

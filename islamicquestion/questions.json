@@ -1,0 +1,27 @@
+[
+    {
+        "question": "What is the first pillar of Islam?",
+        "options": ["Shahada", "Salah", "Zakat", "Hajj"],
+        "correct": 0
+    },
+    {
+        "question": "How many times do Muslims pray daily?",
+        "options": ["3", "5", "7", "10"],
+        "correct": 1
+    },
+    {
+        "question": "What is the holy book of Islam?",
+        "options": ["Torah", "Quran", "Bible", "Vedas"],
+        "correct": 1
+    },
+    {
+        "question": "What is the name of the Prophet of Islam?",
+        "options": ["Prophet Moses", "Prophet Jesus", "Prophet Muhammad", "Prophet Abraham"],
+        "correct": 2
+    },
+    {
+        "question": "In which month do Muslims fast?",
+        "options": ["Ramadan", "Sha'ban", "Muharram", "Dhul-Hijjah"],
+        "correct": 0
+    }
+]

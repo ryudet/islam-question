@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Q&A Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        /* Include the CSS provided earlier here */
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Page -->
+    <div id="welcomePage" class="section active">
+        <h1>مرحبا بك في موقع الاسئلة الدينية</h1>
+        <p>اختبر معلوماتك في دينك وطور من معرفتك الاسلاميه اسئلة متنوعة ومختلفة </p>
+        <button id="startButton" >البدأ</button>
+         <!-- New Section to Choose Number of Questions -->
+    <h3>اختر عدد الاسئلة</h3>
+    <div class="box-1">
+    <button id="select10">10 اسئلة</button>
+    <button id="select15">15 اسئلة</button>
+    <button id="select20">20 اسئلة</button>
+</div>
+    </div>
+
+    <!-- Question Page -->
+    <div id="questionPage" class="section">
+        <h2 id="questionText">Question will appear here</h2>
+        <div id="options"></div>
+        <button id="nextButton" disabled>السؤال التالي</button>
+    </div>
+
+    <!-- Results Page -->
+    <div id="resultsPage" class="section">
+        <h2>Quiz Completed!</h2>
+        <p id="score">You scored X out of Y</p>
+        <button id="restartButton">Restart the Game</button>
+    </div>
+
+    <script src="/index.js">
+        /* Include the JavaScript provided earlier here */
+    </script>
+</body>
+</html>
